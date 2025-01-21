@@ -1,0 +1,50 @@
+*vikidown.txt*  A little translator of |Vimwiki| and Markdown
+
+
+Author: Sebastian Hascilowicz
+License: Same terms as Vim itself (see |license|)
+
+This plugin works closely with |Vimwiki|. It is strongly suggested to
+install |Vimwiki|.
+
+
+INTRODUCTION                                    *vikidown*
+
+vikidown is a tool that translates Vimwiki syntax to Markdown and vice versa.
+It also supports batch conversions of multiple wiki/md files. It saves new
+file in the same directory as the original file.
+
+
+COMMANDS                                        *vikidown-commands*
+
+General philosophy around naming is as follows:
+
+    VikiMd   <--  Viki(vimwiki) gets translated to Md(Markdown)
+    VikiMdAll   <--  VikiMd applied to all files in the same directory.
+
+                                                *:VikiMd*
+:VikiMd                 Converts currently opened Vimwiki file to markdown
+                        and saves the file with the same name with .md
+			extension in the same directory.
+
+                                                *:MdViki*
+:MdViki                 Converts currently opened markdown file to Vimwiki
+                        and saves the file with the same name with .wiki
+			extension in the same directory.
+
+                                                *:VikiMdAll*
+:VikiMdAll              Converts Vimwiki files in the same directory with
+                        .wiki extension to markdown.
+
+                                                *:MdVikiAll*
+:MdVikiAll              Converts Markdown files in the same directory with
+                        .md extension to vimwiki files.
+
+
+
+ABOUT                                           *vikidown-about*
+Latest versions and bug reports are available on GitHub:
+
+https://github.com/Maselko/vikidown
+
+vim:tw=78:et:ft=help:norl
